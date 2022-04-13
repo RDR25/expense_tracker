@@ -12,19 +12,32 @@
         <h2>EXPENSE TRACKER</h2>
     </div>
     <div class="log">
-        <form>
+        <form method="post" action="register.php" >
             <h1>REGISTER</h1>
             <div class="content">
                 <div class="form-field">
-                    <input type="text" id="fname" placeholder="First Name"><br>
-                    <input type="text" id="lname" placeholder="Last Name"><br>
-                    <input type="text" id="mail" placeholder="Email"><br>
-                    <input type="password" id="pass" placeholder="Password"><br>
+                    <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+                    <input type="text" id="mail" name="mail" placeholder="Email"><br>
+                    <input type="password" id="pass" name="pass" placeholder="Password"><br>
                 </div>
-                <button type="submit">REGISTER</button>
+                <button type="submit" onclick="validate()" >REGISTER</button>
                 <p>Already have an account? <a href="login.html">Login</a></p>
             </div>
         </form>
     </div>
 </body>
 </html>
+<script>
+    
+    function validate(){
+        const firstname=document.getElementById('fname').value;
+        const lastname=document.getElementById('lname').value;
+        const Email=document.getElementById('mail').value;
+        const password=document.getElementById('pass').value;
+        if(firstname==""||lastname==""||Email==""||password==""){
+            alert("Please fill the details");
+        }
+
+    }
+</script>
