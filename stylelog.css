@@ -6,17 +6,18 @@
     padding: 30px;
     margin: -10px;
     background-color:  rgb(39, 126, 202);
-    
+    width: 100%;
 }
 h2{
     color: wheat;
-    font-size: 10px;
+    font-size: large;
     letter-spacing:0.5ch;
     border-radius: 20;
 }
 
 .log h1{
     letter-spacing: 00.2ch;
+    
     color: rgb(73, 69, 67);
 }
 .log{

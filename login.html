@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css"> 
+    <link rel="stylesheet" href="stylelog.css"> 
     <title>Expense Tracker</title>
 </head>
 <body>
@@ -12,12 +12,12 @@
         <h2>EXPENSE TRACKER</h2>
     </div>
     <div class="log">
-        <form method="post" action="login.php">
+        <form   method="post"   action="log.php">
             <h1>LOGIN</h1>
             <div class="content">
                 <div class="form-field">
-                    <input type="text" id="mail" name="mail" placeholder="Email"><br>
-                    <input type="password" id="pass" name="pass" placeholder="Password"><br>
+                    <input type="text"     id="Username" name="Username" placeholder="User Name"><br>
+                    <input type="password" id="pass"   name="pass"   placeholder="Password"><br>
                 </div>
                 <button type="submit" onclick="validate()">LOGIN</button>
                 <p>Don't have an account? <a href="register.html">Register</a></p>
@@ -29,9 +29,9 @@
 <script>
     
     function validate(){
-        const Email=document.getElementById('mail').value;
+        const Usname=document.getElementById('Usname').value;
         const password=document.getElementById('pass').value;
-        if(Email==""||password==""){
+        if(Usname==""||password==""){
             alert("Please fill the details");
         }
 

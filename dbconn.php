@@ -1,20 +1,11 @@
 <?php
-
 $servername="localhost";
 $username="root";
-$password="rdr@25";
-$database="et_data";
-
-$conn=mysqli_connect($servername,$username,$password,$database);
-
-
-if(!($conn))
-{
-   echo "success";
+$password="";
+$dbname="etdata";
+$conn=mysqli_connect($servername,$username,$password,$dbname);
+if(!($conn)){
+    die("connection failed: ". mysqli_connect_error());
 }
-else
-{
-   die("Error".mysqli_connect_error());
-}
-mysqli_close($conn)
+
 ?>

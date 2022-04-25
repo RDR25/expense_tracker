@@ -9,17 +9,17 @@
 </head>
 <body>
     <div class="head">
-        <h2>EXPENSE TRACKER</h2>
+        <h2 style="font-size: large;">EXPENSE TRACKER</h2>
     </div>
     <div class="log">
-        <form method="post" action="register.php" >
+        <form   method="post"    action="reg.php">
             <h1>REGISTER</h1>
             <div class="content">
                 <div class="form-field">
-                    <input type="text" id="fname" name="fname" placeholder="First Name"><br>
-                    <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
-                    <input type="text" id="mail" name="mail" placeholder="Email"><br>
-                    <input type="password" id="pass" name="pass" placeholder="Password"><br>
+                    <input type="text"     id="fname"    name="fname"    placeholder="Name">     <br>
+                    <input type="text"     id="username" name="username" placeholder="User Name"><br>
+                    <input type="text"     id="mail"     name="mail"     placeholder="Email">    <br>
+                    <input type="password" id="pass"     name="pass"     placeholder="Password"> <br>
                 </div>
                 <button type="submit" onclick="validate()" >REGISTER</button>
                 <p>Already have an account? <a href="login.html">Login</a></p>
@@ -31,11 +31,11 @@
 <script>
     
     function validate(){
-        const firstname=document.getElementById('fname').value;
-        const lastname=document.getElementById('lname').value;
-        const Email=document.getElementById('mail').value;
+        const name    =document.getElementById('fname').value;
+        const username=document.getElementById('username').value;
+        const Email   =document.getElementById('mail').value;
         const password=document.getElementById('pass').value;
-        if(firstname==""||lastname==""||Email==""||password==""){
+        if(name==""||username==""||Email==""||password==""){
             alert("Please fill the details");
         }
 
